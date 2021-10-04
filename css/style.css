@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(to left, rgb(153, 153, 153)30%,rgb(233, 213, 213)70%);
+}
+.navsection{
+    width:100%;
+    height:25vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, rgb(153, 153, 153)80%,rgb(233, 213, 213)20%);
+}
+
+.logo{
+    width:30%;
+    color:aqua;
+    background-image: linear-gradient(#8d98e3 40% , #854fee 60% );
+    padding:5px;
+    box-sizing: border-box;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    animation: h1 3s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes h1{
+    from{padding-left: 60px;}
+    to{padding-right: 60px;}
+}
+.navbar{
+    width:70%;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+    font-weight: 800;
+    font-size: 25px;
+    position: relative;
+}
+.navbar a:first-child{
+    color:rgb(234, 236, 233);
+}
+.navbar a:before{
+    content:"";
+    position: absolute;
+    top:18px;
+    left:0;
+    width:0;
+    height:5px;
+    border-bottom: 2px solid white;
+    transition: all 0.2s linear;
+}
+.navbar a:hover:before{
+    width:100%
+}
+main{
+    height:75vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background-color: #2196f3;
+}
+.right img{
+    max-width: 500px;
+    height:auto;
+}
+.left{
+    color:black;
+    text-transform: uppercase;
+}
+.left h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.left h3:after{
+    content: "";
+    width: 338px;
+    height: 3px;
+    position: absolute;
+    top: 47%;
+    left: 18%;
+    background-color: green;
+}
+.left h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.left h2 {
+    margin-bottom:  30px;
+}
+.btn1{
+    text-decoration: none;
+    padding:10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.btn2{
+    text-decoration: none;
+    padding:10px;
+    text-transform: uppercase;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.btn1:hover {
+     color:green;
+     background-image: linear-gradient(#fff 40%, #fff222 50%, #ddddd1 10%);
+}
+.btn2:hover {
+    color:green;
+    background-image: linear-gradient(#fff 40%, #fff222 50%, #ddddd1 10%);
+}
